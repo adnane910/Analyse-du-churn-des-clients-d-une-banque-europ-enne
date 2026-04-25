@@ -571,3 +571,50 @@ if submit:
     st.write(commentaire)
     if prob_churn>seuil: st.error("⚠️⚠️ Client à risque de churn ⚠️⚠️")
     else: st.success("✅ Client fidèle")
+
+
+
+
+
+st.title(" Recommandations stratégiques")
+
+st.subheader("1. Réduire le churn des clients à risque élevé")
+
+st.markdown("""
+👉 Profil : femmes , Client  30-49 ans, 1 produit, inactifs, Allemagne
+
+Actions :
+- Offre de rétention ciblée (cashback, avantages)
+- Système d'alerte churn (inactivité + mono-produit)
+- Cross-selling (épargne, carte premium)
+""")
+
+st.subheader("2. Augmenter le nombre de produits")
+
+st.markdown("""
+👉 Les clients mono-produit sont les plus à risque
+
+Actions :
+- Campagnes personnalisées
+- Offres packagées
+- Bonus fidélité multi-produits
+""")
+
+st.subheader("3. Stratégie marché allemand")
+
+st.markdown("""
+Actions :
+- Améliorer expérience client
+- Personnalisation des offres
+- Collecte de feedback
+""")
+
+st.subheader("📊 KPIs à suivre")
+
+st.markdown("""
+- Taux de churn global
+- Churn par pays
+- Churn par segment
+- Nombre de produits par client
+- Engagement client
+""")
