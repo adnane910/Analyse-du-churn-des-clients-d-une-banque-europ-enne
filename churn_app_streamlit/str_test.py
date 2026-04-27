@@ -101,7 +101,7 @@ st.markdown(""" ----------------------------------------------------------------
 # Charger les données et le modèle
 # -------------------------------
 df_bank_clean = pd.read_csv("Data/processed/df_bank_clean.csv")
-df_ml = pd.read_csv("../Data/processed/ML_data.csv")
+df_ml = pd.read_csv("Data/processed/ML_data.csv")
 cols_pipeline = df_ml.drop(columns=["Exited"]).columns.tolist()
 
 with open("models/pipeline_churn.pkl", "rb") as f:
