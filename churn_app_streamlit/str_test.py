@@ -30,8 +30,8 @@ st.markdown("""
 
 col1, col2, col3 = st.columns([1,6,1])
 
-with col2:
-    st.image("../churn_app_streamlit/bank_image.jpg")
+#with col2:
+#    st.image("../churn_app_streamlit/bank_image.jpg")
 
 
 st.markdown(""" 📌 Contexte :
@@ -75,6 +75,9 @@ Analyse géographique :
 Segmentation client :
             
             Identifier les différents segments de clients présents dans la base de données
+
+ML : 
+            Prédire le churn à l'aide de modèles de machine learning 
  """)
 
 st.markdown(""" ------------------------------------------------------------------------- """)
