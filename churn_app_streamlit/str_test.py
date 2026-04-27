@@ -30,8 +30,8 @@ st.markdown("""
 
 col1, col2, col3 = st.columns([1,6,1])
 
-#with col2:
-#    st.image("../churn_app_streamlit/bank_image.jpg")
+with col2:
+    st.image("churn_app_streamlit/bank_image.jpg")
 
 
 st.markdown(""" 📌 Contexte :
@@ -100,11 +100,11 @@ st.markdown(""" ----------------------------------------------------------------
 # -------------------------------
 # Charger les données et le modèle
 # -------------------------------
-df_bank_clean = pd.read_csv("../Data/processed/df_bank_clean.csv")
+df_bank_clean = pd.read_csv("Data/processed/df_bank_clean.csv")
 df_ml = pd.read_csv("../Data/processed/ML_data.csv")
 cols_pipeline = df_ml.drop(columns=["Exited"]).columns.tolist()
 
-with open("../models/pipeline_churn.pkl", "rb") as f:
+with open("models/pipeline_churn.pkl", "rb") as f:
     pipeline = pickle.load(f)
 
 # -------------------------------
